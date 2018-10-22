@@ -10,6 +10,8 @@ public class PlayerAttack : MonoBehaviour
 	public Transform attackPos;
 	public float attackRange; 
 	public LayerMask whatIsEnemies;
+    public float attackRangeX;
+    public float attackRangeY;
 	public int damage; 
 	// Use this for initialization
 	void Start () 
@@ -26,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
 			//then you can attack
 			if(Input.GetKey(KeyCode.Space))
 			{
-				Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX,attackRangeY), 0, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
 				{
 					enemiesToDamage[i].GetComponent<Enemy_Health>().TakeDamage(damage); 
@@ -45,6 +47,6 @@ public class PlayerAttack : MonoBehaviour
 	void OnDrawGizmosSelected()
 	{
 		Gizmos.color = Color.red;
-		Gizmos.DrawWireSphere(attackPos.position, attackRange);
+        Gizmos.DrawWireCube(attackPos.position,new Vector3(attackRangeX,attackRangeY,1));
 	}
 }
