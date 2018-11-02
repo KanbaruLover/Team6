@@ -10,19 +10,24 @@ public class Player_Combo : MonoBehaviour
     private enum States { idle, lp, lp_lp, lp_hp, hp, hp_lp, hp_hp, finisher }; //These are the possible states that the player can be in
     private States myState; //This is where we store the current state
     private int idle_return_timer = 0;
+
+
+
+    //Attack variables
     private float timeBtwAttack;
 
     public float startTimeBtwAttack;
-    public Transform attackPos;
     public float attackRange;
-    public LayerMask whatIsEnemies;
-    public LayerMask whatIsTrashcan;
     public float attackRangeX;
     public float attackRangeY;
     public int light_damage;
     public int heavy_damage;
-
     public Text text;
+    public Transform attackPos;
+    public LayerMask whatIsEnemies;
+    public LayerMask whatIsTrashcan;
+
+
 
     void Start()
     {
@@ -39,48 +44,24 @@ public class Player_Combo : MonoBehaviour
                 text.text = "idle";
                 idle_return_timer = 0;
             }
-
-            //Light attack to enemy
-            if (Input.GetButtonDown("Fire1"))
-            {
-                Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, whatIsEnemies);
-                for (int i = 0; i < enemiesToDamage.Length; i++)
-                {
-                    enemiesToDamage[i].GetComponent<Enemy_Health>().TakeDamage(light_damage);
-                
-            }
-
-            timeBtwAttack = startTimeBtwAttack;
         }
-        else
+
+
+
+        //////Attack code
+
+
+
+        //Heavy attack to enemy
+        if (timeBtwAttack <= 0)
         {
-            timeBtwAttack -= Time.deltaTime;
-        }
-            //Light attack to trashcan
-            if (Input.GetButtonDown("Fire1"))
-            {
-                Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, whatIsTrashcan);
-                for (int i = 0; i < enemiesToDamage.Length; i++)
-                {
-                    enemiesToDamage[i].GetComponent<Trashcan_Behavior>().TakeDamage(light_damage);
-
-                }
-
-                timeBtwAttack = startTimeBtwAttack;
-            }
-            else
-            {
-                timeBtwAttack -= Time.deltaTime;
-            }
-
-
-            //Heavy attack to enemy
+            //then you can attack
             if (Input.GetButtonDown("Fire2"))
             {
                 Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<Enemy_Health>().TakeDamage(heavy_damage);
+                    enemiesToDamage[i].GetComponent<Enemy_Health>().TakeHeavyDamage(heavy_damage);
                 }
             }
 
@@ -92,13 +73,16 @@ public class Player_Combo : MonoBehaviour
         }
 
         //Heavy attack to trashcan
-        if (Input.GetButtonDown("Fire2"))
+        if (timeBtwAttack <= 0)
         {
-            Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, whatIsTrashcan);
-            for (int i = 0; i < enemiesToDamage.Length; i++)
+            //then you can attack
+            if (Input.GetButtonDown("Fire2"))
             {
-                enemiesToDamage[i].GetComponent<Trashcan_Behavior>().TakeDamage(heavy_damage);
-
+                Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, whatIsTrashcan);
+                for (int i = 0; i < enemiesToDamage.Length; i++)
+                {
+                    enemiesToDamage[i].GetComponent<Trashcan_Behavior>().TakeHeavyDamage(heavy_damage);
+                }
             }
 
             timeBtwAttack = startTimeBtwAttack;
@@ -109,6 +93,45 @@ public class Player_Combo : MonoBehaviour
         }
 
 
+        //Light attack to enemy
+        if (timeBtwAttack <= 0)
+        {
+            //then you can attack
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, whatIsEnemies);
+                for (int i = 0; i < enemiesToDamage.Length; i++)
+                {
+                    enemiesToDamage[i].GetComponent<Enemy_Health>().TakeLightDamage(light_damage);
+                }
+            }
+
+            timeBtwAttack = startTimeBtwAttack;
+        }
+        else
+        {
+            timeBtwAttack -= Time.deltaTime;
+        }
+
+        //Light attack to trashcan
+        if (timeBtwAttack <= 0)
+        {
+            //then you can attack
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, whatIsTrashcan);
+                for (int i = 0; i < enemiesToDamage.Length; i++)
+                {
+                    enemiesToDamage[i].GetComponent<Trashcan_Behavior>().TakeLightDamage(light_damage);
+                }
+            }
+
+            timeBtwAttack = startTimeBtwAttack;
+        }
+        else
+        {
+            timeBtwAttack -= Time.deltaTime;
+        }
 
         //if a punch connects the player is moved to the correct state where they have new moves that occur when hitting fire1 or fire2
         //3 successful hits leads to 1 of 8 finishers
@@ -198,5 +221,13 @@ public class Player_Combo : MonoBehaviour
                     break;
             }
         }
+
     }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(attackPos.position, new Vector3(attackRangeX, attackRangeY, 1));
+    }
+
 }

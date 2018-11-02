@@ -35,11 +35,18 @@ public class Enemy_Health : MonoBehaviour {
 		transform.Translate(Vector2.left *speed * Time.deltaTime);
 	}
 
-	public void TakeDamage(int damage)
+	public void TakeLightDamage(int light_damage)
 	{
         dazedTime = startDazedTime;
-		health -= damage;
-		Debug.Log("Damage TAKEN!");
+		health -= light_damage;
+		Debug.Log("Light Damage Taken!");
 	}
+
+    public void TakeHeavyDamage(int heavy_damage)
+    {
+        dazedTime = startDazedTime;
+        health -= heavy_damage;
+        Debug.Log("Heavy Damage Taken!");
+    }
 }
 

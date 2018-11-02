@@ -44,8 +44,15 @@ public class Trashcan_Behavior : MonoBehaviour
 
     }
 
-    public void TakeDamage(int damage)
+    public void TakeLightDamage(int light_damage)
     {
-        health -= damage;
+        health -= light_damage;
+        Debug.Log("Light Damage Taken!");
+    }
+
+    public void TakeHeavyDamage(int heavy_damage)
+    {
+        health -= heavy_damage;
+        Debug.Log("Heavy Damage Taken!");
     }
 }
