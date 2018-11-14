@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: d057196ce0dde7a438188bf3fa739e97
+guid: 2c47e826e3cd30845abfdeb7b642f538
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Player_Sprite_2_0
-    21300002: Player_Sprite_2_1
-    21300004: Player_Sprite_2_2
-    21300006: Player_Sprite_2_3
-    21300008: Player_Sprite_2_4
-    21300010: Player_Sprite_2_5
+    21300000: Idle_Anim_0
+    21300002: Idle_Anim_1
+    21300004: Idle_Anim_2
+    21300006: Idle_Anim_3
+    21300008: Idle_Anim_4
+    21300010: Idle_Anim_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,121 +90,145 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Sprite_2_0
+      name: Idle_Anim_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 723
-        width: 205
-        height: 350
+        x: 15
+        y: 827
+        width: 146
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
       spriteID: 2a37508706cf74dc6b1c3bb34659bced
+=======
+      spriteID: ba2ab04478de6994eabb5b4dac9fc9b3
+>>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Sprite_2_1
+      name: Idle_Anim_1
       rect:
         serializedVersion: 2
-        x: 262
-        y: 723
-        width: 231
-        height: 350
+        x: 194
+        y: 827
+        width: 146
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
       spriteID: 875de0b7e44824840b6880189bc18cf5
+=======
+      spriteID: 922821de138f29d459abe354e99b6f2b
+>>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Sprite_2_2
+      name: Idle_Anim_2
       rect:
         serializedVersion: 2
-        x: 526
-        y: 723
-        width: 245
-        height: 343
+        x: 383
+        y: 827
+        width: 146
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
       spriteID: 66a5f79bdeedf476aba3c53c9292ccf9
+=======
+      spriteID: 445d1ac6ec0445642ade91d3927e6eea
+>>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Sprite_2_3
+      name: Idle_Anim_3
       rect:
         serializedVersion: 2
-        x: 817
-        y: 723
-        width: 244
-        height: 343
+        x: 10
+        y: 557
+        width: 146
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
       spriteID: fa344f61b519d4b51bdbb0ff88ca3d27
+=======
+      spriteID: a61a00c1fced2954eaf5b2669e07eee4
+>>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Sprite_2_4
+      name: Idle_Anim_4
       rect:
         serializedVersion: 2
-        x: 1101
-        y: 723
-        width: 231
-        height: 350
+        x: 199
+        y: 557
+        width: 146
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
       spriteID: 8aebe768377c145e786fec56ff237911
+=======
+      spriteID: 0d6d902d8ccd1bc45affb7c998aea4b8
+>>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Sprite_2_5
+      name: Idle_Anim_5
       rect:
         serializedVersion: 2
-        x: 1378
-        y: 723
-        width: 205
-        height: 350
+        x: 378
+        y: 557
+        width: 146
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
       spriteID: 8f101afa01120469b809a7ad03618df8
+=======
+      spriteID: 481a4ec2a7c350644861abf5853911f1
+>>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
       vertices: []
       indices: 
       edges: []
@@ -212,7 +236,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a471dd1a8ad5a5947a95ad6bbe427ab7
+    spriteID: a9309a3acad28044199467db35243d34
     vertices: []
     indices: 
     edges: []
