@@ -32,7 +32,7 @@ public class Enemy_Health : MonoBehaviour {
             Destroy(gameObject);
         }
 
-		transform.Translate(Vector2.left *speed * Time.deltaTime);
+		//transform.Translate(Vector2.left *speed * Time.deltaTime);
 	}
 
 	public void TakeLightDamage(int light_damage)
