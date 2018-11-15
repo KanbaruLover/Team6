@@ -98,17 +98,13 @@ TextureImporter:
         width: 146
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
-      spriteID: 2a37508706cf74dc6b1c3bb34659bced
-=======
-      spriteID: ba2ab04478de6994eabb5b4dac9fc9b3
->>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
+      spriteID: f4a31c16b5cc5b5469249a4003610f86
       vertices: []
       indices: 
       edges: []
@@ -122,17 +118,13 @@ TextureImporter:
         width: 146
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
-      spriteID: 875de0b7e44824840b6880189bc18cf5
-=======
-      spriteID: 922821de138f29d459abe354e99b6f2b
->>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
+      spriteID: ce20e29374411fa4d8e90fe412588eff
       vertices: []
       indices: 
       edges: []
@@ -146,17 +138,13 @@ TextureImporter:
         width: 146
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
-      spriteID: 66a5f79bdeedf476aba3c53c9292ccf9
-=======
-      spriteID: 445d1ac6ec0445642ade91d3927e6eea
->>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
+      spriteID: a19cb5a5c60356546a2a2b36c00fff71
       vertices: []
       indices: 
       edges: []
@@ -170,17 +158,13 @@ TextureImporter:
         width: 146
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
-      spriteID: fa344f61b519d4b51bdbb0ff88ca3d27
-=======
-      spriteID: a61a00c1fced2954eaf5b2669e07eee4
->>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
+      spriteID: d8453453b94f84248bb9c62f16105e80
       vertices: []
       indices: 
       edges: []
@@ -194,17 +178,13 @@ TextureImporter:
         width: 146
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
-      spriteID: 8aebe768377c145e786fec56ff237911
-=======
-      spriteID: 0d6d902d8ccd1bc45affb7c998aea4b8
->>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
+      spriteID: fcea481a7c6953849b81d7aeabf7d6f9
       vertices: []
       indices: 
       edges: []
@@ -218,17 +198,13 @@ TextureImporter:
         width: 146
         height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Prototype/Assets/Sprites/Player_Sprite_2.png.meta
-      spriteID: 8f101afa01120469b809a7ad03618df8
-=======
-      spriteID: 481a4ec2a7c350644861abf5853911f1
->>>>>>> b86cb69513f8e1afc84f511e2bd02b92a1e75013:Prototype/Assets/Sprites/Idle_Anim.png.meta
+      spriteID: 53359f16390876544bb7f908ba95c052
       vertices: []
       indices: 
       edges: []
@@ -236,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a9309a3acad28044199467db35243d34
+    spriteID: e333e573483910944a2014b0440baddb
     vertices: []
     indices: 
     edges: []
