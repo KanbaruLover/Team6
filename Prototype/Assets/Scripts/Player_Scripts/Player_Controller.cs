@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Controller: MonoBehaviour {
 
@@ -28,12 +29,38 @@ public class Player_Controller: MonoBehaviour {
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * speed;
 
+
+        if(health <= 0)
+        {
+
+            Destroy(gameObject);
+
+            SceneManager.LoadScene("Level_1");
+
+
+        }
+
+
 	}
 
     private void FixedUpdate()
     {
 
         rb2d.MovePosition(rb2d.position + moveVelocity * Time.fixedDeltaTime);
+    }
+
+
+     void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("sushi"))
+        {
+            //... then set the other object we just collided with to inactive.
+            other.gameObject.SetActive(false);
+
+            health += 13;
+
+        }
+
     }
 
 

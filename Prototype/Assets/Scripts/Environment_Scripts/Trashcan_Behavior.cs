@@ -2,42 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trashcan_Behavior : MonoBehaviour 
+public class Trashcan_Behavior : MonoBehaviour
 {
 
     public int health;
+    public GameObject item;
     private bool taskIsRunning = true; // set to true when you start the task
 
     private int number;
 
 
-	// Use this for initialization
-	void Start () 
+    // Use this for initialization
+    void Start()
     {
 
     }
-	
-	void Update()
+
+    void Update()
     {
         if (health <= 0 && taskIsRunning == true)
         {
-            number = Random.Range(1, 15);
+            number = Random.Range(1, 5);
             Debug.Log(number);
 
-            if (number >= 10)
+            if (number >= 3)
             {
-                //sushi (health item)
+                //sushi
+
+                GameObject sushi = Instantiate(item, item.transform.position, Quaternion.identity) as GameObject;
+                sushi.transform.position = new Vector2(8, -2);
+
             }
 
-            if (number < 10 && number >= 5)
-            {
-                //slushie (energy item)
-            }
-
-            if (number < 5)
+            else
             {
                 //no item
             }
+
 
             taskIsRunning = false;
         }
