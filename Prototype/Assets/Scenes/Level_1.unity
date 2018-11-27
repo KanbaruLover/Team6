@@ -453,7 +453,26 @@ MonoBehaviour:
   XMaxValue: 64.209
   XMinEnabled: 1
   XMinValue: 0.05
+<<<<<<< HEAD:Prototype/Assets/Scenes/Level_1.unity
 --- !u!4 &910015940 stripped
+=======
+--- !u!1 &806252055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 806252056}
+  m_Layer: 10
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &806252056
+>>>>>>> a2a081a5ba4e6d57e6ffdc92b5ff25513493c4c2:Prototype/Assets/Scenes/SampleScene.unity
 Transform:
   m_CorrespondingSourceObject: {fileID: 4259324723160826, guid: e37de2571c7cb4f3f9df7f06432a408a,
     type: 2}
